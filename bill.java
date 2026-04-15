@@ -48,3 +48,4 @@ public class bill {
         System.out.println("TOTAL TO PAY: $" + calculateTotalCost());
         System.out.println("==============================================\n");
     }
+}
