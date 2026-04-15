@@ -1,8 +1,8 @@
 public class client {
     private String name;
-    private String residence;
+    private Tuple<String, String> residence; // first element city, second element country
     private List<Call> callHistory;
-    public client(String name, String residence) {
+    public client(String name, Tuple<String, String> residence) {
         this.name = name;
         this.residence = residence;
         this.callHistory = new ArrayList<>();
@@ -10,7 +10,7 @@ public class client {
     public String getName() {
         return name;
     }
-    public String getResidence() {
+    public Tuple<String, String> getResidence() {
         return residence;
     }
     public List<Call> getCallHistory() {
