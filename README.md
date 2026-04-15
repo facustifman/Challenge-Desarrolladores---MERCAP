@@ -6,7 +6,7 @@ System that calculates monthly phone call bills with differentiated costs by typ
 
 ```bash
 javac *.java
-java Main
+java main
 ```
 
 ## Clases
