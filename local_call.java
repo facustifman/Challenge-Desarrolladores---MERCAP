@@ -1,8 +1,8 @@
 public class local_call extends Call {
-    public local_call(String place_of_caller, String place_of_receiver, String day_of_week, int duration, int startTime) {
+    public local_call(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
         super(place_of_caller, place_of_receiver, day_of_week, duration, startTime);
     }
-    double calculateCost() {
+    public double calculateCost() {
         double cost = 0.0;
         if (getDayOfWeek() == "Saturday" || getDayOfWeek() == "Sunday") {
             cost = getDuration() * 0.10;

@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class client {
     private String name;
-    private Tuple<String, String> residence; // first element city, second element country
+    private Location residence;
     private List<Call> callHistory;
-    public client(String name, Tuple<String, String> residence) {
+    public client(String name, Location residence) {
         this.name = name;
         this.residence = residence;
         this.callHistory = new ArrayList<>();
@@ -10,7 +13,7 @@ public class client {
     public String getName() {
         return name;
     }
-    public Tuple<String, String> getResidence() {
+    public Location getResidence() {
         return residence;
     }
     public List<Call> getCallHistory() {
