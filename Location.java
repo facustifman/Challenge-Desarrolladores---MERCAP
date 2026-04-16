@@ -1,6 +1,6 @@
 public class Location {
-    private String city;
-    private String country;
+    private final String city;
+    private final String country;
 
     public Location(String city, String country) {
         this.city = city;

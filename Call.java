@@ -1,10 +1,10 @@
 public abstract class Call {
-    private Location place_of_caller;
-    private Location place_of_receiver;
-    private String day_of_week;
-    private int duration;
-    private int startTime;
-    private int endTime;
+    private final Location place_of_caller;
+    private final Location place_of_receiver;
+    private final String day_of_week;
+    private final int duration;
+    private final int startTime;
+    private final int endTime;
     public Call(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
         this.place_of_caller = place_of_caller;
         this.place_of_receiver = place_of_receiver;
@@ -28,7 +28,9 @@ public abstract class Call {
             return "international";
         }
     }
+
     public abstract double calculateCost();
+    
     public String getDayOfWeek() {
         return day_of_week;
     }

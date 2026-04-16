@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class client {
-    private String name;
-    private Location residence;
-    private List<Call> callHistory;
-    public client(String name, Location residence) {
+public class Client {
+    private final String name;
+    private final Location residence;
+    private final List<Call> callHistory;
+    public Client(String name, Location residence) {
         this.name = name;
         this.residence = residence;
         this.callHistory = new ArrayList<>();

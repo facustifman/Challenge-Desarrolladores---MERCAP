@@ -1,15 +1,13 @@
 import java.util.List;
 
-public class bill {
+public class Bill {
     private static final double FIXED_MONTHLY_COST = 15.0; // Fixed monthly fee for the client
-    private client client;
-    private int month;
-    private int year;
+    private final client client;
+    private final int month;
 
-    public bill(client client, int month, int year) {
+    public Bill(client client, int month, int year) {
         this.client = client;
         this.month = month;
-        this.year = year;
     }
 
     public double calculateTotalCost() {

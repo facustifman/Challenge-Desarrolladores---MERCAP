@@ -1,8 +1,8 @@
-import java.util.HashMap;
-import java.util.Map;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class national_international_call extends Call {
     private static final Map<String, Double> nationalCosts = new HashMap<>();
@@ -16,6 +16,7 @@ public class national_international_call extends Call {
     public national_international_call(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
         super(place_of_caller, place_of_receiver, day_of_week, duration, startTime);
     }
+    @Override
     public double calculateCost() {
         double cost = 0.0;
         String type = getTypeOfCall();
@@ -36,7 +37,7 @@ public class national_international_call extends Call {
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
                 if (parts.length == 2) {
-                    data.put(parts[0].trim(), Double.parseDouble(parts[1].trim()));
+                    data.put(parts[0].trim(), Double.valueOf(parts[1]));
                 }
             }
         } catch (IOException e) {

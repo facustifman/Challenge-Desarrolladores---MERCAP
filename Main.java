@@ -1,4 +1,4 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
         // Create client and residence location
         Location residenceLocation = new Location("Buenos Aires", "Argentina");
@@ -24,7 +24,7 @@ public class main {
         local_call llamada5 = new local_call(bsas, bsas, "Friday", 730, 7);
         cliente.addCall(llamada5);
 
-        bill factura = new bill(cliente, 4, 2026);
+        Bill factura = new Bill(cliente, 4, 2026);
         factura.printBill();
     }
 }
