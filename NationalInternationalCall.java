@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class national_international_call extends Call {
+public class NationalInternationalCall extends Call {
     private static final Map<String, Double> nationalCosts = new HashMap<>();
     private static final Map<String, Double> internationalCosts = new HashMap<>();
 
@@ -13,7 +13,7 @@ public class national_international_call extends Call {
         internationalCosts.putAll(loadCSV("international_costs.csv"));
     }
 
-    public national_international_call(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
+    public NationalInternationalCall(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
         super(place_of_caller, place_of_receiver, day_of_week, duration, startTime);
     }
     @Override

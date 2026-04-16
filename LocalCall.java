@@ -1,5 +1,5 @@
-public class local_call extends Call {
-    public local_call(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
+public class LocalCall extends Call {
+    public LocalCall(Location place_of_caller, Location place_of_receiver, String day_of_week, int duration, int startTime) {
         super(place_of_caller, place_of_receiver, day_of_week, duration, startTime);
     }
     @Override
